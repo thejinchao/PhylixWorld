@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libPhylix\libPhylixEx_ConvexPartition.cpp" />
+    <ClCompile Include="libPhylix\libPhylixEx_Polygon.cpp" />
+    <ClCompile Include="libPhylix\libPhylixEx_Triangle.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_ActionManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Camera.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_Box.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_Chain.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_Circle.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_Edge.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_FixJoint.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_HingeJoint.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_Polygon.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Creater_SpringJoint.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_DragObject.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Action_Select.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Camera.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_EventManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Group.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_MassBody.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_MassBodyManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Material.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_MaterialManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Math.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_ObjectManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_ObjectParams.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object_Chain.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object_Entity.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object_Joint.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object_Joint_Fixed.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object_Joint_Hinge.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Object_Joint_Spring.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Operator.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_OperatorManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Scene.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_SceneSnap.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Shape.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_ShapeManager.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libPhylix\libPhylix_StringUtil.cpp" />
+    <ClCompile Include="libPhylix\libPhylix_Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libPhylix\libPhylixEx_ConvexPartition.h" />
+    <ClInclude Include="libPhylix\libPhylixEx_Polygon.h" />
+    <ClInclude Include="libPhylix\libPhylixEx_Triangle.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action.h" />
+    <ClInclude Include="libPhylix\libPhylix_ActionManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Camera.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_Box.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_Chain.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_Circle.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_Edge.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_FixJoint.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_HingeJoint.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_Polygon.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Creater_SpringJoint.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_DragObject.h" />
+    <ClInclude Include="libPhylix\libPhylix_Action_Select.h" />
+    <ClInclude Include="libPhylix\libPhylix_Camera.h" />
+    <ClInclude Include="libPhylix\libPhylix_Color.h" />
+    <ClInclude Include="libPhylix\libPhylix_EventDefine.h" />
+    <ClInclude Include="libPhylix\libPhylix_EventManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_FileStream.h" />
+    <ClInclude Include="libPhylix\libPhylix_Group.h" />
+    <ClInclude Include="libPhylix\libPhylix_Handler.h" />
+    <ClInclude Include="libPhylix\libPhylix_IteratorWrappers.h" />
+    <ClInclude Include="libPhylix\libPhylix_MassBody.h" />
+    <ClInclude Include="libPhylix\libPhylix_MassBodyManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_Material.h" />
+    <ClInclude Include="libPhylix\libPhylix_MaterialManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_Math.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object.h" />
+    <ClInclude Include="libPhylix\libPhylix_ObjectManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_ObjectParams.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object_Chain.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object_Entity.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object_Joint.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object_Joint_Fixed.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object_Joint_Hinge.h" />
+    <ClInclude Include="libPhylix\libPhylix_Object_Joint_Spring.h" />
+    <ClInclude Include="libPhylix\libPhylix_Operator.h" />
+    <ClInclude Include="libPhylix\libPhylix_OperatorManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_RenderInterface.h" />
+    <ClInclude Include="libPhylix\libPhylix_Scene.h" />
+    <ClInclude Include="libPhylix\libPhylix_SceneSnap.h" />
+    <ClInclude Include="libPhylix\libPhylix_Shape.h" />
+    <ClInclude Include="libPhylix\libPhylix_ShapeManager.h" />
+    <ClInclude Include="libPhylix\libPhylix_stdafx.h" />
+    <ClInclude Include="libPhylix\libPhylix_StringUtil.h" />
+    <ClInclude Include="libPhylix\libPhylix_TypeDefine.h" />
+    <ClInclude Include="libPhylix\libPhylix_Vector.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D6493DF-2CAA-4BE1-B6EB-CAD4F75DC6A7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libPhylix</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../libPhylix;../../lib/chipmunk/Chipmunk/include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>libPhylix_stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../libPhylix;../../lib/chipmunk/Chipmunk/include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>libPhylix_stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

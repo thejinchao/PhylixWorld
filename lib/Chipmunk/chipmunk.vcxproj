@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\Chipmunk\include\chipmunk\chipmunk.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\chipmunk_ffi.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\chipmunk_types.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\chipmunk_unsafe.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpConstraint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpDampedRotarySpring.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpDampedSpring.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpGearJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpGrooveJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpPinJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpPivotJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpRatchetJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpRotaryLimitJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpSimpleMotor.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\cpSlideJoint.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\constraints\util.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpArbiter.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpBB.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpBody.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpPolyShape.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpShape.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpSpace.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpSpatialIndex.h" />
+    <ClInclude Include=".\Chipmunk\include\chipmunk\cpVect.h" />
+    <ClInclude Include=".\Chipmunk\src\prime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\Chipmunk\src\chipmunk.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpConstraint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpDampedRotarySpring.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpDampedSpring.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpGearJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpGrooveJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpPinJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpPivotJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpRatchetJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpRotaryLimitJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpSimpleMotor.c" />
+    <ClCompile Include=".\Chipmunk\src\constraints\cpSlideJoint.c" />
+    <ClCompile Include=".\Chipmunk\src\cpArbiter.c" />
+    <ClCompile Include=".\Chipmunk\src\cpArray.c" />
+    <ClCompile Include=".\Chipmunk\src\cpBB.c" />
+    <ClCompile Include=".\Chipmunk\src\cpBBTree.c" />
+    <ClCompile Include=".\Chipmunk\src\cpBody.c" />
+    <ClCompile Include=".\Chipmunk\src\cpCollision.c" />
+    <ClCompile Include=".\Chipmunk\src\cpHashSet.c" />
+    <ClCompile Include=".\Chipmunk\src\cpPolyShape.c" />
+    <ClCompile Include=".\Chipmunk\src\cpShape.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSpace.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSpaceComponent.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSpaceHash.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSpaceQuery.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSpaceStep.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSpatialIndex.c" />
+    <ClCompile Include=".\Chipmunk\src\cpSweep1D.c" />
+    <ClCompile Include=".\Chipmunk\src\cpVect.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1ACE86E-5A14-490A-9678-104BA2546723}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>chipmunk</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Chipmunk\include\chipmunk</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Chipmunk\include\chipmunk</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

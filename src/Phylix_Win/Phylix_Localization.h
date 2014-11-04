@@ -1,0 +1,49 @@
+#pragma once
+
+namespace Phylix
+{
+
+/** 字符串ID*/
+enum STRING_ID
+{
+	SI_DENSITY_VALUE = 1,
+	SI_FRICTION_VALUE,
+	SI_RESTITUTION_VALUE,
+	SI_ENGINE_ENABLE,
+	SI_ENGINE_DIRECTION,		//5
+	SI_ENGINE_RATE,
+	SI_AREA_VALUE,
+	SI_MASS_VALUE,
+	SI_MOMENT_VALUE,
+	SI_SPRING_TARGET_LENGTH,	//10
+	SI_SPRING_STIFFNESS,
+	SI_SPRING_DAMP,
+	SI_COLOR_VALUE,
+	SI_MATERIAL_TEMPLATE_NAME_0,
+	SI_MATERIAL_TEMPLATE_NAME_1,	//15
+	SI_MATERIAL_TEMPLATE_NAME_2,
+	SI_MATERIAL_TEMPLATE_NAME_3,
+	SI_MATERIAL_TEMPLATE_NAME_4,
+	SI_MATERIAL_TEMPLATE_NAME_5,
+	SI_MATERIAL_TEMPLATE_NAME_6,	//20
+	SI_MATERIAL_TEMPLATE_NAME_7,
+	SI_MATERIAL_TEMPLATE_NAME_8,
+};
+
+/** 国际化相关
+*/
+class Localization
+{
+public:
+	/** 本地资源初始化 */
+	void init(void);
+	/** 根据id获得字符串 */
+	const TCHAR* getString(STRING_ID id);
+
+public:
+	Localization();
+	virtual ~Localization();
+};
+
+}
+
